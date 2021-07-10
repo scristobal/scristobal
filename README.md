@@ -1,5 +1,5 @@
 ### Hi there 👋
 
-I am Samuel Cristobal, but everybody call me Samu. I work at DataBeacon a small startup committed to disrupt the aviation industry with Artificial Intelligence.
+I am Samu. I work and co-funded at DataBeacon a startup committed to disrupt the aviation industry with Artificial Intelligence.
 
-Unfortunately most of my work is stored in private repositories, so there is not much to show just yet. But maybe something pops up soon!
+Most of my work is stored in private repositories, so there is not much to show just yet. But maybe something pops up soon!
