@@ -6,4 +6,4 @@ My avourite language is TypeScript. On the frontend, I enjoy writing my apps usi
 
 I follow a mix of declarative, functional and reactive programming style, from the safety of strongly typed language if possible. 
 
-At the moment, most of my work is stored in private repositories, so there is not much to show just yet. But maybe something pops up soon!
+Most of my day-to-day work is stored in private repositories, but in my free time I develop open source libraries than then I use for work. You can find them here or at https://www.npmjs.com/~samuelsh
