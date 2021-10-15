@@ -1,9 +1,17 @@
 ### Hi there 👋
 
-I am Samu and love the challenge of building great UXs and intricate UIs for the web 👀
+I am Samu and love the challenge of building entangled UIs and intricate backends for the web 👀
 
-My avourite language is TypeScript. On the frontend, I enjoy writing my apps using React & Redux (when it makes sense). For the backend I use Nodejs, GraphQL and the Prisma ORM, but most of my work involves streams, so I use RxJS, Kafkajs and SocketIO.
+- TypeScript 
+- React 
+- Redux
+- RxJS
+- Nodejs
+- Prisma
+- GraphQL
+- Kafkajs
+- SoketIO
 
-I follow a mix of declarative, functional and reactive programming style, from the safety of strongly typed language if possible. 
+I follow a mix of declarative, functional and reactive programming style. Love types and prototypal inheritance and Promises! 
 
-Most of my day-to-day work is stored in private repositories, but in my free time I develop open source libraries than then I use for work. You can find them here or at https://www.npmjs.com/~samuelsh
+In my free time I develop open-source libraries to fill some gaps I need at work. You can find them here or at https://www.npmjs.com/~samuelsh
