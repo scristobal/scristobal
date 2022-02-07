@@ -1,7 +1,7 @@
 ### Hi there 👋
 
-I am Samu (he/him). I was doing maths for a while, and it was fun. But I now enjoy building entangled UIs 👀 and intricate backends for the 🕸️
+I am Samu (he/him). I was doing maths for a while, and it was fun. Then I did Data Science, and it was fine. But I now enjoy Software Engineering like never before!
 
-Reach out to talk TypeScript, React, Redux, RxJS, Nodejs, Prisma, GraphQL, Kafkajs, SoketIO or declarative, functional, reactive programming, types and prototypal inheritance and Promises.
+My favourite topics are: type theory; declarative, functional and reactive programming; OOP w/ composition vs prototypal inheritance and Futures/Promises. Always love to chat an learn about those, or maybe something new! please do reach out!
 
-In my free time I develop open-source libraries to fill some gaps we need at work. You can find them here or at https://www.npmjs.com/~samuelsh
+In my free time I develop open-source libraries to fill some gaps we need at work. Mostly in the TypeScript/nodejs ecosystem. You can find them here or at https://www.npmjs.com/~samuelsh
