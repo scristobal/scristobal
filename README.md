@@ -7,5 +7,5 @@ Back in the 90s, I wrote my first lines of Turbo Pascal when I was around 12. Fe
 Feel free to explore my profile and code, most of the work I do is on private repositories. However, in my free time I develop open-source libraries to fill some gaps we need at work. Mostly in the TypeScript/nodejs ecosystem. You can find them here or at https://www.npmjs.com/~samuelsh
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=scristobal&langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=scristobal&langs_count=20)
 
