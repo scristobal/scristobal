@@ -6,4 +6,3 @@ Back in the 90s, I wrote my first lines of Turbo Pascal when I was around 12. Fe
 
 Feel free to explore my profile and code, most of the work I do is on private repositories. However, in my free time I develop open-source libraries to fill some gaps we need at work. Mostly in the TypeScript/nodejs ecosystem. You can find them here or at https://www.npmjs.com/~samuelsh
 
-[![wakatime](https://wakatime.com/badge/user/e8b5a06b-b967-453a-9491-e0005475c34f.svg)](https://wakatime.com/@e8b5a06b-b967-453a-9491-e0005475c34f)
