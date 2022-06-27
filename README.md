@@ -1,4 +1,6 @@
-howdy!👋🏻  I am Samu (he/him). Feel free to explore my profile and code, hope you find something useful. 
+howdy!👋🏻 
+
+I am Samu (he/him). Feel free to explore my profile and code, hope you find something useful. 
 
 I wrote some open-source tools, mostly in the TypeScript/nodejs ecosystem, and some experiments 🔬 in Go. You can find them here or published at https://www.npmjs.com/~samuelsh. 
 
