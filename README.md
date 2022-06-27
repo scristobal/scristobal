@@ -1,8 +1,5 @@
-### Hi there 👋
+howdy!👋🏻 I am Samu (he/him). Feel free to explore my profile and code, hope you find something useful. 
 
-I am Samu (he/him). 
+I wrote some open-source tools, mostly in the TypeScript/nodejs ecosystem, and some experiments 🔬 in Go. You can find them here or published at https://www.npmjs.com/~samuelsh. 
 
-Back in the 90s, I wrote my first lines of Turbo Pascal when I was around 12. Few years later, I did an engineering degree, followed by a second degree in maths and a MSc where I focused on algebraic geometry and logic. Afterwards I jumped into the data mining and machine learning train for a while. A few years ago, I co-funded a startup and became CTO. In reallity, I spend most of my time writting code as a Software Engineer. I guess that closes the circle.
-
-Feel free to explore my profile and code, most of the work I do is on private repositories. However, in my free time I develop open-source libraries to fill some gaps we need at work. Mostly in the TypeScript/nodejs ecosystem. You can find them here or at https://www.npmjs.com/~samuelsh
-
+I am always open to contribute to new or existing projects, or just having a nice chat. Do no hesitate to reach out! 📫
