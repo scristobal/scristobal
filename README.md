@@ -1,3 +1,4 @@
-Howdy!👋🏻 I am Samu, a generalist software engineer with a mathematics background.
+Howdy!👋🏻 I am Samu, welcome to my GitHub space. Hope you find something useful. 
+There is some more stuff published at https://www.npmjs.com/~samuelsh. 
 
-Feel free to explore my profile and code, hope you find something useful. There is some more stuff published at https://www.npmjs.com/~samuelsh. 
+https://scristobal.github.io/homepage/
