@@ -7,3 +7,4 @@ If you are reeeally curious, here are some more links:
 - I do not like social media, still this is my twitter https://twitter.com/TypeSamuel
 - Single blog post, I am a developer not a writter https://dev.to/typesamuel
 - Not really a homepage, just a stub https://scristobal.github.io/homepage/
+- My profile at Manfred, I think they are doing a great job https://www.getmanfred.com/profile/samuel
