@@ -1,0 +1,219 @@
+name: Metrics
+on:
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit (optional)
+  workflow_dispatch:
+  push: {branches: ["main"]}
+
+jobs:
+
+  habits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-habits.svg
+          token: ${{ secrets.METRICS_SECRET }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
+          user: ielm
+          base: ""
+          template: classic
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_from: 500       # Use 200 events to compute habits
+          plugin_habits_days: 60        # Keep only events from last 14 days
+          plugin_habits_charts: yes     # Display charts section
+          plugin_habits_trim: yes       # Trim unused hours on daily chart
+
+  issue_pr_lang:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: issue_pr_lang.svg
+          # You'll need to setup a personal token in your secrets.
+          token: ${{ secrets.METRICS_SECRET }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: ielm
+          template: classic
+          base: ""
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          plugin_languages: yes
+          plugin_followup: yes
+          # plugin_languages: yes
+          # plugin_languages_indepth: yes
+          # # plugin_languages_sections: recently-used
+          # plugin_languages_ignored: >-
+          #   html, css, tex, less, qmake, lex, cmake, gnuplot, RenderScript, MDX, Jupyter Notebook, JetBrains MPS, Batchfile, TSX
+          # plugin_languages_skipped: >-
+          #   ielm/leia-main, ielm/OntoGen_Legacy, ielm/python_scaffold, ielm/OntoGen_v0.0.3, ielm/lex, ielm/vex, ielm/LEIA, ielm/leiaOntology, ielm/lex, ielm/quip, ielm/OntoGen
+          # plugin_languages_details: lines, bytes-size
+          # plugin_languages_categories: programming
+          # # plugin_languages_indepth_custom: monoql-io/monoql, monoql-io/kinde-rs
+          # # plugin_languages_recent_categories: programming
+          # # plugin_languages_recent_days: 360
+          # plugin_languages_limit: 8
+          # plugin_languages_analysis_timeout: 30
+          # plugin_languages_analysis_timeout_repositories: 15
+
+  # issue_pr_lang:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: issue_pr_lang.svg
+  #         # You'll need to setup a personal token in your secrets.
+  #         token: ${{ secrets.METRICS_TOKEN }}
+  #         # GITHUB_TOKEN is a special auto-generated token used for commits
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+  #         # Options
+  #         user: ielm
+  #         template: classic
+  #         base: ""
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }}
+  #         plugin_followup: yes
+  #         plugin_languages: yes
+
+
+  # achievements:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: achievements.svg
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+  #         user: ielm 
+  #         base: achievements
+  #         plugin_achievements: yes
+  #         plugin_achievements_threshold: B      # Display achievements with rank B or higher
+  #         plugin_achievements_secrets: yes      # Display unlocked secrets achievements
+  #         plugin_achievements_display: compact  # Use compact display
+  #         plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
+
+  # github-metrics:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: header.svg
+  #         # You'll need to setup a personal token in your secrets.
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         # GITHUB_TOKEN is a special auto-generated token used for commits
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+  #         # Options
+  #         user: ielm 
+  #         template: classic
+  #         base: header
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }}
+  # lines:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: lines-of-code.svg
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+  #         base: "repositories"
+  #         plugin_lines: yes
+
+  # acti_comm:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: acti_comm.svg
+  #         # You'll need to setup a personal token in your secrets.
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         # GITHUB_TOKEN is a special auto-generated token used for commits
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+  #         # Options
+  #         user: ielm
+  #         template: classic
+  #         base: activity, community
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  # iso_calender:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: iso_calender.svg
+  #         # You'll need to setup a personal token in your secrets.
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         # GITHUB_TOKEN is a special auto-generated token used for commits
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+  #         # Options
+  #         user: ielm 
+  #         template: classic
+  #         base: ""
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }}
+  #         plugin_isocalendar: yes
+  #         plugin_isocalendar_duration: half-year
+
+# - name: Indepth analysis
+#   uses: lowlighter/metrics@latest
+#   with:
+#     filename: metrics.plugin.languages.indepth.svg
+#     token: ${{ secrets.METRICS_TOKEN }}
+#     base: ""
+#     plugin_languages: yes
+#     plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+#     plugin_languages_indepth: yes
+#     plugin_languages_details: lines, bytes-size
+#     plugin_languages_limit: 4
+#     plugin_languages_analysis_timeout: 15
+#   test:
+#     skip: true
+
+  #         # Options
+  #         user: ielm
+  #         template: classic
+  #         base: ""
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }}
+  #         plugin_followup: yes
+  #         plugin_languages: yes
+  #         plugin_languages_indepth: yes
+  #         plugin_languages_indepth_custom: ielm/utapi-rs, ielm/vendia-banking-api, monoql-io/monoql
+  #         plugin_languages_recent_load: 400
+  #         plugin_languages_recent_days: 365
+  #         plugin_languages_ignored: HTML, CSS, RenderScript, Makefile, MDX
+  #         plugin_languages_skipped: ielm/ielm
+  #         plugin_languages_categories: programming
+  #         # plugin_languages_recent_categories: programming
+#   name: Most used
+# uses: lowlighter/metrics@latest
+# with:
+#   filename: metrics.plugin.languages.svg
+#   token: ${{ secrets.METRICS_TOKEN }}
+#   base: ""
+#   plugin_languages: yes
+#   plugin_languages_ignored: >-
+#     html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+#     gnuplot
+#   plugin_languages_limit: 4
+
+
+  # repositories:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: repositories.svg
+  #         # You'll need to setup a personal token in your secrets.
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         # GITHUB_TOKEN is a special auto-generated token used for commits
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+  #         # Options
+  #         user: ielm 
+  #         template: classic
+  #         base: repositories
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }}
