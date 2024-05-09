@@ -29,7 +29,7 @@ jobs:
                   plugin_habits_trim: yes
                   plugin_languages: yes
                   plugin_languages_details: yes
-                  #   plugin_languages_indepth: yes
-                  plugin_sponsorships: yes
-                  #   plugin_leetcode: yes
-                  #   plugin_leetcode_user: scristobal
+                  plugin_languages_indepth: yes
+                  plugin_sponsorships: no
+                  plugin_leetcode: no
+                  plugin_leetcode_user: scristobal
