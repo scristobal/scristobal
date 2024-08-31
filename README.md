@@ -1,4 +1,3 @@
-Welcome to my random colection of side projects and random experiments!
+Welcome to my random colection of half-backed side projects, experiments and learning notes!
 
-I hope you find something useful.
-
+I hope you find something useful. 
